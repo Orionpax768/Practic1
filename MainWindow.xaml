@@ -1,0 +1,32 @@
+﻿<Window x:Class="Practic1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practic1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="750">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/istockphoto-2050245827-612x612.jpg"/>
+        </Grid.Background>
+        <Label Content="Вызов принят!" Margin="10,10,578,441" Foreground="#FF00E6B6"/>
+        <TextBox TextWrapping="Wrap" Text="vhjgjkg" Margin="35,174,599,281"/>
+        <TextBox TextWrapping="Wrap" Text="vcbmncbn" Margin="273,174,357,281"/>
+        <Label Content="Вызов 1:" Margin="33,128,597,325"/>
+        <Label Content="Вызов 2:" Margin="283,131,407,325"/>
+        <Button x:Name="btnStart" Content="Вперёд!" Margin="11,359,599,75" Click="btnStart_Click"/>
+        <Grid ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+    </Grid>
+</Window>
