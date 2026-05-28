@@ -8,14 +8,8 @@
         Title="MainWindow" Height="500" Width="750">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/istockphoto-2050245827-612x612.jpg"/>
+            <ImageBrush ImageSource="/istockphoto-2050245827-612x612.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
-        <Label Content="Вызов принят!" Margin="10,10,578,441" Foreground="#FF00E6B6"/>
-        <TextBox TextWrapping="Wrap" Text="vhjgjkg" Margin="35,174,599,281"/>
-        <TextBox TextWrapping="Wrap" Text="vcbmncbn" Margin="273,174,357,281"/>
-        <Label Content="Вызов 1:" Margin="33,128,597,325"/>
-        <Label Content="Вызов 2:" Margin="283,131,407,325"/>
-        <Button x:Name="btnStart" Content="Вперёд!" Margin="11,359,599,75" Click="btnStart_Click"/>
         <Grid ShowGridLines="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -27,6 +21,21 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+            <Label Content="Вызов принят!" Grid.Row="0" Grid.Column="0" 
+                   Foreground="#FF00E6B6" FontSize="14" FontWeight="Bold"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,15,0,0"/>
+            <StackPanel Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0">
+                <Label Content="Вызов 1:" Foreground="White" Padding="0,0,0,5"/>
+                <TextBox x:Name="txtBox1" TextWrapping="Wrap" Width="160" Height="35"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0">
+                <Label Content="Вызов 2:" Foreground="White" Padding="0,0,0,5"/>
+                <TextBox x:Name="txtBox2" TextWrapping="Wrap" Width="160" Height="35"/>
+            </StackPanel>
+            <Button x:Name="btnStart" Content="Вперёд!" Grid.Row="2" Grid.Column="0" 
+                    Width="140" Height="40" 
+                    HorizontalAlignment="Left" VerticalAlignment="Bottom" 
+                    Margin="20,0,0,20" Click="btnStart_Click"/>
         </Grid>
     </Grid>
 </Window>
